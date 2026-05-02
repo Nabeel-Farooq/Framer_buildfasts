@@ -9,13 +9,7 @@
   Build your SaaS product landing page in hours, not days. 
   <br>Super easy to customize Next.js boilerplate.
   <br />
-  <a href="#about-buildfast">About</a>
-  ·
-  <a href="#getting-started">Get Started</a>
-  ·
-  <a href="#customization">Customize</a>
-  ·
-  <a href="#deploy-on-vercel">Deploy</a>
+ 
 </p>
 
 ---
