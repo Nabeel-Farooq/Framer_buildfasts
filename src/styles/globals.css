@@ -1,0 +1,451 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: 213 92% 62%;
+    --background-primary: 231 17% 95%;
+    --background-secondary: 0 0% 100%;
+    --elements-secondary: 228 27% 83%;
+    --foreground-hsl: 227 44% 21%;
+    --foreground-opposite: 0 0% 100%;
+    --cta-color: 213 92% 62%;
+
+    --cards-bg: 231 27% 89%;
+    --cards-bg-secondary: 228 27% 83%;
+    
+    --border-color-primary: 228 27% 73%;
+
+    --text-color-headlines: 228 41% 21%;
+    --text-color-secondary: 234 15% 47%;
+    --icons-primary: 215 42% 36%;
+
+    --btn-color-primary: 215 42% 36%;
+    --btn-color-secondary: 234 15% 47%;
+    --btn-color-disabled: 234 15% 47%;
+    --pop-colors-primary: 0 100% 50%;
+
+    --logo-text-color: 234 14% 47%;
+    --logo-icon-color: 228 41% 21%;
+    --nav-center-bg: 231 27% 89%;
+
+    --navbar-bg: 231 17% 95%;
+    --navbar-text-color: 227 44% 21%;
+    --navbar-icon-color: 228 41% 21%;
+    --navbar-hover-link-color: 213 92% 62%;
+    --nav-cta-btn-bg: 213 92% 62%;
+    --navbar-border-color: 228 27% 73%;
+    --mobile-menu-bg: 231 27% 89%;
+    --mobile-menu-text-color: 227 44% 21%;
+
+    --hero-headline-text-color: 227 44% 21%;
+
+    --primary-text-color: 180 7% 8%;
+    --button-border-color: 0 0% 6%;
+    --button-text-color: 145 0% 81%;
+  
+  }
+  
+  html[data-theme="MidNight"] {
+    --primary-color: 330 85% 50%; /* #EC2791 in HSL */
+    --background-primary: 0 0% 10%; /* Dark background */
+    --background-secondary: 0 0% 15%; /* Slightly lighter dark background */
+    --elements-secondary: 0 0% 20%; /* Darker elements */
+    --foreground-hsl: 0 0% 90%; /* Light foreground for contrast */
+    --foreground-opposite: 0 0% 10%; /* Dark foreground opposite */
+    --cta-color: 330 85% 50%; /* Same as primary color */
+
+    --cards-bg: 0 0% 12%; /* Dark card background */
+    --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
+    
+    --border-color-primary: 145 0% 81%; /* Dark border color */
+
+    --text-color-headlines: 0 0% 90%; /* Light text for headlines */
+    --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
+    --icons-primary: 0 0% 80%; /* Light icons */
+
+    --btn-color-primary: 330 85% 50%; /* Primary button color */
+    --btn-color-secondary: 0 0% 70%; /* Secondary button color */
+    --btn-color-disabled: 0 0% 50%; /* Disabled button color */
+    --pop-colors-primary: 330 85% 50%; /* Same as primary color */
+
+    --navbar-bg: 0 0% 10%; /* Dark navbar background */
+    --logo-text-color: 0 0% 90%; /* Light logo text */
+    --logo-icon-color: 0 0% 80%; /* Light logo icon */
+    --navbar-text-color: 0 0% 90%; /* Light text */
+    --navbar-icon-color: 0 0% 80%; /* Light icon */
+    --navbar-hover-link-color: 330 85% 50%; /* Primary theme color */
+    --navbar-border-color: 0 0% 20%; /* Dark border */
+    --nav-cta-btn-bg: 330 85% 50%;
+    --mobile-menu-bg: 0 0% 12%; /* Mobile menu dark background */
+    --mobile-menu-text-color: 0 0% 90%; /* Light text for mobile menu */
+
+    --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
+
+    --primary-text-color: 0 0% 90%; /* Light primary text */
+    --button-border-color: 0 0% 20%; /* Dark button border */
+    --button-text-color: 0 0% 100%; /* White button text */
+}
+
+html[data-theme="GreenGlow"] {
+  --primary-color: 156 88% 38%; /* #0C7B48 in HSL */
+  --background-primary: 0 0% 98%; /* Light neutral white for main background */
+  --background-secondary: 0 0% 92%; /* Slightly darker grey background for sections */
+  --elements-secondary: 156 30% 90%; /* Soft pastel green for secondary elements */
+  --foreground-hsl: 0 0% 20%; /* Neutral dark gray (#333333) for general foreground elements like text */
+  --foreground-opposite: 0 0% 100%; /* White text for contrast */
+  --cta-color: 156 88% 38%; /* Same as primary green (#0C7B48) */
+
+  --cards-bg: 0 0% 100%; /* Pure white for cards background */
+  --cards-bg-secondary: 0 0% 96%; /* Light grey for card contrasts */
+  
+  --border-color-primary: 156 20% 70%; /* Subtle greenish border for depth */
+
+  --text-color-headlines: 156 88% 38%; /* Strong green for headlines */
+  --text-color-secondary: 156 20% 35%; /* Muted dark green for body text */
+  --icons-primary: 156 50% 38%; /* Medium green for icons */
+
+  --btn-color-primary: 156 88% 38%; /* Strong green for primary buttons */
+  --btn-color-secondary: 156 30% 70%; /* Softer green for secondary buttons */
+  --btn-color-disabled: 156 20% 85%; /* Muted light green for disabled buttons */
+  --pop-colors-primary: 0 80% 50%; /* Bright red (#FF4D4D) for error states or warnings */
+
+  --navbar-bg: 0 0% 100%; /* White navbar background */
+  --logo-text-color: 156 88% 38%; /* Primary green for logo text */
+  --logo-icon-color: 156 50% 38%; /* Medium green for logo icon */
+  --navbar-text-color: 156 20% 35%; /* Muted dark green for navbar text */
+  --navbar-icon-color: 156 88% 38%; /* Primary green for navbar icons */
+  --navbar-hover-link-color: 156 50% 45%; /* Medium green for hover states */
+  --navbar-border-color: 0 0% 90%; /* Light grey for navbar border */
+  --nav-cta-btn-bg: 156 88% 38%; /* Strong green for CTA buttons */
+  --mobile-menu-bg: 0 0% 98%; /* Same as background-primary */
+  --mobile-menu-text-color: 156 88% 38%; /* Primary green for mobile menu text */
+
+  --hero-headline-text-color: 156 20% 35%; /* Muted dark green for hero headlines */
+
+  --primary-text-color: 0 0% 13%; /* Neutral dark grey for normal text */
+  --button-border-color: 156 50% 38%; /* Medium green for button borders */
+  --button-text-color: 0 0% 100%; /* White text for buttons */
+}
+
+  html[data-theme="funblue"] {
+    --primary-color: 213 92% 62%;
+    --background-primary: 231 17% 95%;
+    --background-secondary: 0 0% 100%;
+    --elements-secondary: 228 27% 83%;
+    --foreground-hsl: 227 44% 21%;
+    --foreground-opposite: 0 0% 100%;
+    --cta-color: 213 92% 62%;
+
+    --cards-bg: 231 27% 89%;
+    --cards-bg-secondary: 228 27% 83%;
+    
+    --border-color-primary: 228 27% 73%;
+
+    --text-color-headlines: 228 41% 21%;
+    --text-color-secondary: 234 15% 47%;
+    --icons-primary: 215 42% 36%;
+
+    --btn-color-primary: 215 42% 36%;
+    --btn-color-secondary: 234 15% 47%;
+    --btn-color-disabled: 234 15% 47%;
+    --pop-colors-primary: 0 100% 50%;
+
+    --navbar-bg: 231 17% 95%;
+    --navbar-text-color: 227 44% 21%;
+    --navbar-icon-color: 228 41% 21%;
+    --navbar-hover-link-color: 213 92% 62%;
+    --navbar-border-color: 228 27% 73%;
+    --nav-cta-btn-bg: 213 92% 62%;
+    --mobile-menu-bg: 231 27% 89%;
+    --mobile-menu-text-color: 227 44% 21%;
+
+    --hero-headline-text-color: 227 44% 21%;
+
+    --primary-text-color: 180 7% 8%;
+    --button-border-color: 0 0% 6%;
+    --button-text-color: 145 0% 81%;
+  
+  }
+  
+  html[data-theme="Banana"] {
+    --primary-color: 45 100% 60%; /* #FFBE1A in HSL */
+    --background-primary: 0 0% 13%; /* #212121 in HSL */
+    --background-secondary: 0 0% 6%; /* #0F0F0F in HSL */
+    --elements-secondary: 0 0% 20%; /* Darker elements */
+    --foreground-hsl: 0 0% 90%; /* Light foreground for contrast */
+    --foreground-opposite: 0 0% 10%; /* Dark foreground opposite */
+    --cta-color: 45 100% 60%; /* Same as primary color */
+
+    --cards-bg: 0 0% 12%; /* Dark card background */
+    --cards-bg-secondary: 0 0% 18%; /* Slightly lighter card background */
+    
+    --border-color-primary: 145 0% 81%;
+
+    --text-color-headlines: 0 0% 90%; /* Light text for headlines */
+    --text-color-secondary: 0 0% 70%; /* Slightly darker light text */
+    --icons-primary: 0 0% 80%; /* Light icons */
+
+    --btn-color-primary: 45 100% 60%; /* Primary button color */
+    --btn-color-secondary: 0 0% 70%; /* Secondary button color */
+    --btn-color-disabled: 0 0% 50%; /* Disabled button color */
+    --pop-colors-primary: 45 100% 60%; /* Same as primary color */
+
+    --logo-text-color: 0 0% 90%; /* Light logo text */
+    --logo-icon-color: 0 0% 80%; /* Light logo icon */
+    --navbar-bg: 0 0% 13%; /* Custom yellow background */
+    --navbar-text-color: 0 0% 90%; /* Light text */
+    --navbar-icon-color: 0 0% 80%; /* Light icon */
+    --navbar-hover-link-color: 45 100% 60%; /* Bright yellow */
+    --navbar-border-color: 0 0% 20%;
+    --nav-cta-btn-bg: 45 100% 60%;
+    --mobile-menu-bg: 0 0% 13%; /* Darker mobile menu */
+    --mobile-menu-text-color: 0 0% 90%;
+    --hero-headline-text-color: 0 0% 90%; /* Light text for hero headline */
+
+    --primary-text-color: 0 0% 90%; /* Light primary text */
+    --button-border-color: 0 0% 20%; /* Dark button border */
+    --button-text-color: 0 0% 100%; /* White button text */
+}
+html[data-theme="daylight"] {
+  --primary-color: 43 80% 45%; /* Vibrant warm golden-yellow for primary highlights */
+  --background-primary: 43 60% 96%; /* Soft warm yellow for primary background */
+  --background-secondary: 120 30% 94%; /* Pale green for subtle contrast sections */
+  --elements-secondary: 43 50% 80%; /* Light golden tone for secondary elements */
+  --foreground-hsl: 0 0% 20%; /* Deep gray for strong text readability */
+  --foreground-opposite: 0 0% 100%; /* White for high-contrast elements */
+  --cta-color: 43 80% 45%; /* Vibrant golden-yellow for CTAs */
+
+  --cards-bg: 43 60% 95%; /* Light golden tone for card backgrounds */
+  --cards-bg-secondary: 120 30% 92%; /* Muted pale green for secondary cards */
+  
+  --border-color-primary: 43 50% 70%; /* Subtle golden-yellow for borders */
+
+  --text-color-headlines: 43 90% 40%; /* Warm golden for headlines */
+  --text-color-secondary: 43 50% 30%; /* Muted golden for secondary text */
+  --icons-primary: 43 80% 45%; /* Warm golden tone for icons */
+
+  --btn-color-primary: 43 80% 45%; /* Vibrant golden-yellow for primary buttons */
+  --btn-color-secondary: 43 50% 70%; /* Softer golden hue for secondary buttons */
+  --btn-color-disabled: 43 30% 85%; /* Pale yellow for disabled buttons */
+  --pop-colors-primary: 348 90% 55%; /* Soft coral pink for warning states */
+
+  --navbar-bg: 43 60% 96%; /* Soft warm yellow for navbar */
+  --logo-text-color: 43 80% 45%; /* Vibrant golden-yellow for logo text */
+  --logo-icon-color: 43 70% 40%; /* Rich golden tone for logo icon */
+  --navbar-text-color: 43 50% 30%; /* Muted golden for navbar text */
+  --navbar-icon-color: 43 80% 45%; /* Warm golden-yellow for navbar icons */
+  --navbar-hover-link-color: 43 60% 40%; /* Muted golden-yellow for hover states */
+  --navbar-border-color: 43 50% 80%; /* Subtle golden tone for navbar borders */
+  --nav-cta-btn-bg: 43 80% 45%; /* Vibrant golden-yellow for CTA buttons */
+  --mobile-menu-bg: 43 60% 96%; /* Soft warm yellow for mobile menu background */
+  --mobile-menu-text-color: 43 80% 45%; /* Vibrant golden-yellow for mobile menu text */
+
+  --hero-headline-text-color: 43 50% 30%; /* Muted golden for hero headlines */
+
+  --primary-text-color: 0 0% 15%; /* Deep gray for readability */
+  --button-border-color: 43 60% 40%; /* Muted golden tone for button borders */
+  --button-text-color: 0 0% 100%; /* White for button text */
+}
+
+html[data-theme="emerald"] {
+  --primary-color: 140 85% 25%; /* Deep emerald green */
+  --background-primary: 140 20% 12%; /* Dark forest green for primary background */
+  --background-secondary: 140 30% 18%; /* Muted green for secondary backgrounds */
+  --elements-secondary: 140 40% 22%; /* Slightly lighter green for secondary elements */
+  --foreground-hsl: 0 0% 96%; /* Light gray/white for readable text */
+  --foreground-opposite: 0 0% 10%; /* Deep black for contrast */
+  --cta-color: 140 85% 30%; /* Rich emerald green for CTAs */
+
+  --cards-bg: 140 20% 14%; /* Very dark green for card backgrounds */
+  --cards-bg-secondary: 140 25% 18%; /* Slightly lighter dark green for secondary cards */
+  
+  --border-color-primary: 140 40% 25%; /* Medium emerald green for borders */
+
+  --text-color-headlines: 140 85% 35%; /* Bright emerald green for headlines */
+  --text-color-secondary: 140 50% 50%; /* Softer muted green for secondary text */
+  --icons-primary: 140 60% 40%; /* Medium emerald green for icons */
+
+  --btn-color-primary: 140 85% 30%; /* Vibrant emerald green for primary buttons */
+  --btn-color-secondary: 140 50% 25%; /* Darker green for secondary buttons */
+  --btn-color-disabled: 140 30% 18%; /* Muted green for disabled buttons */
+  --pop-colors-primary: 0 100% 50%; /* Bright red for warnings or errors */
+
+  --navbar-bg: 140 20% 12%; /* Dark forest green for navbar */
+  --logo-text-color: 140 85% 35%; /* Bright emerald green for logo text */
+  --logo-icon-color: 140 70% 45%; /* Medium emerald green for logo icon */
+  --navbar-text-color: 0 0% 96%; /* Light gray/white for text in navbar */
+  --navbar-icon-color: 140 85% 35%; /* Bright emerald green for navbar icons */
+  --navbar-hover-link-color: 140 60% 50%; /* Lighter green for hover states */
+  --navbar-border-color: 140 25% 20%; /* Subtle green for navbar borders */
+  --nav-cta-btn-bg: 140 85% 30%; /* Vibrant emerald green for CTA buttons in navbar */
+  --mobile-menu-bg: 140 20% 12%; /* Dark forest green for mobile menu */
+  --mobile-menu-text-color: 0 0% 96%; /* Light gray/white for mobile menu text */
+
+  --hero-headline-text-color: 0 0% 96%; /* Light gray for hero headlines */
+
+  --primary-text-color: 0 0% 95%; /* Light gray for text */
+  --button-border-color: 140 70% 40%; /* Rich emerald green for button borders */
+  --button-text-color: 0 0% 96%; /* Light gray/white for button text */
+}
+
+
+
+
+}
+
+/* Global selection styles */
+::selection {
+  background-color: hsl(var(--primary-color)); /* Background color for selected text */
+  color: hsl(var(--foreground-opposite) / 1); /* Text color for selected text */
+}
+
+
+@media (prefers-color-scheme: funblue) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: hsl(var(--foreground-hsl));
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background: hsl(var(--background-primary));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* .bg-gradient-theme {
+  @apply bg-gradient-to-b from-[rgb(var(--background-start-rgb))] to-[rgb(var(--background-end-rgb))];
+} */
+.btn-primary {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  border-color: hsl(var(--cta-color) / var(--tw-border-opacity));
+  background-color: hsl(var(--cta-color) / var(--tw-bg-opacity));
+  color: hsl(var(--foreground-opposite) / var(--tw-text-opacity));
+  outline-color: hsl(var(--cta-color) / 1);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              stroke 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              filter 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              backdrop-filter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--rounded-btn, 0.5rem);
+  height: 3.5rem;
+  padding: 0 1rem;
+  line-height: 1.25rem;
+  min-height: 3rem;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-width: var(--border-btn, 1px);
+  animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  text-transform: var(--btn-text-case, uppercase);
+}
+
+.btn-primary:hover {
+  border-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1));
+  background-color: hsl(var(--cta-color) / calc(var(--tw-bg-opacity) - 0.1)); /* Slightly darker */
+  outline-color: hsl(var(--foreground-hsl) / 1);
+}
+
+.btn-loading {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  border-color: hsl(var(--primary-color) / 0.7);
+  background-color: hsl(var(--primary-color) / 0.7);
+  color: hsl(var(--foreground-opposite) / var(--tw-text-opacity));
+  outline-color: hsl(var(--primary-color) / 1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-wide{
+  width: 18rem;
+}
+
+
+.text-accent{
+  --tw-text-opacity:1;
+  color:hsl(var(--highlight-text) / var(--tw-text-opacity));
+}
+
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--elements-secondary);
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-radio:checked {
+  background-color: hsl(var(--primary-color));
+  border-color: hsl(var(--primary-color));
+}
+.avatar-group{
+  display: flex;
+  overflow: hidden;
+}
+.avatar{
+  position: relative;
+  display: inline-flex;
+}
+.avatar-group :where(.avatar){
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--b1) / var(--tw-border-opacity));
+}
+.avatar img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.feature-liticle-gradient-border {
+  position: relative;
+}
+
+.feature-liticle-gradient-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px; /* Adjust the height as needed */
+  background: linear-gradient(to right, transparent, yellow, transparent);
+  border-radius: 0 0 4px 4px; /* Adjust the border radius as needed */
+}
+
+.feature-liticle-gradient-background {
+  background: linear-gradient(to right, rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.1));
+}

@@ -1,0 +1,22 @@
+{
+      "logo": "RocketLaunch",
+      "brand": "BuildFast",
+      "description": "Build your Landing Page in hours, not days",
+      "sections": [
+        {
+          "title": "LINKS",
+          "links": [
+            { "text": "Pricing", "href": "#pricing" },
+            { "text": "Affiliates — Earn up to $99 per sale", "href": "/affiliates" }
+          ]
+        },
+        {
+          "title": "LEGAL",
+          "links": [
+            { "text": "Terms of services", "href": "/tos" },
+            { "text": "Privacy policy", "href": "/privacy-policy" },
+            { "text": "Licenses", "href": "/license" }
+          ]
+        }
+      ]
+    }

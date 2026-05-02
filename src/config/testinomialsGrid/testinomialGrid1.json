@@ -1,0 +1,103 @@
+{
+  "heading": "400 builders have built landing pages.",
+  "description": "They made their first $ online, and some even quit their 9-5!",
+  "testimonials":[
+      {
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
+        "profileName": "Jack F.",
+        "profileDesc": "Founder",
+        "description": "I shipped in 6 days as a noob coder... This is awesome",
+        "image": "/avatars/avatar_1.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
+
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Alice T.",
+        "profileDesc": "Startup Founder",
+        "description": "I was skeptical at first, but this tool completely streamlined our launch process.",
+        "image": "/avatars/avatar_1.png",
+        "feedback": "Made our startup journey smoother.",
+        "link": "https://example.com",
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 5
+      },
+      {
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
+        "profileName": "Jack F.",
+        "profileDesc": "Founder",
+        "description": "I validated many ideas very fast using this landing page boilerplate.",
+        "image": "/avatars/avatar_3.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Mark L.",
+        "profileDesc": "Freelance Developer",
+        "description": "I shipped a complete SaaS Landing Page in an hour. Couldn’t have done it without BuildFast.",
+        "image": "/avatars/avatar_2.png",
+        "feedback": "Best tool for fast deployment.",
+        "link": "https://example.com",
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Sophia K.",
+        "profileDesc": "Tech Entrepreneur",
+        "description": "The boilerplate code is very well structured which saved me countless hours of coding.",
+        "image": "/avatars/avatar_3.png",
+        "feedback": "Simplified my workflow significantly.",
+        "link": "https://example.com",
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 4
+      },
+      {
+        "tweetLink": "https://x.com/chirags93395286/status/1827068558276489388",
+        "profileName": "Jack F.",
+        "profileDesc": "Founder",
+        "description": "I shipped in 6 days as a noob coder... This is awesome",
+        "image": "/avatars/avatar_6.png",
+        "feedback": "This product changed my life!",
+        "link": "https://example.com",
+        "platform": "Twitter",
+        "showStars": false,
+        "starCount": 0
+
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Tom W.",
+        "profileDesc": "Indie Maker",
+        "description": "Launching my idea was never this easy. A must-have for builders and indie hackers.",
+        "image": "/avatars/avatar_4.png",
+        "feedback": "Helped me go live in no time.",
+        "link": "https://example.com",
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 5
+      },
+      {
+        "tweetLink": null,
+        "profileName": "Chloe P.",
+        "profileDesc": "UX Designer",
+        "description": "The AI-powered customization helped me craft stunning landing pages effortlessly.",
+        "image": "/avatars/avatar_6.png",
+        "feedback": "Incredible AI features!",
+        "link": "https://example.com",
+        "platform": "LinkedIn",
+        "showStars": true,
+        "starCount": 5
+      }
+]}
