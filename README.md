@@ -35,7 +35,7 @@ Follow these steps to set up BuildFast:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/chiragksharma/BuildFast.git
+   git clone https://github.com/Nabeel-Farooq/BuildFast.git
    cd BuildFast
    ```
 2. **Install Dependencies**
