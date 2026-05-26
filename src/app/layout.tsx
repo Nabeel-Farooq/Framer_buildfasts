@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
+
 import Header from "@components/Header";
-import "@styles/globals.css";
-import Head from "next/head";
 import Footer from "@components/Footer";
 import { ThemeProvider } from "next-themes";
-import NavbarCenter from "@components/Navbars/Navbar_center";
+
+import "@styles/globals.css";
 
 const Bricolage = Bricolage_Grotesque({
-    weight: ['200', '300', '400', '500', '600', '700', '800'],
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-bricolage',
- });
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bricolage",
+});
 
 export const metadata: Metadata = {
   title: "BuildFast",
   description: "Nextjs SaaS Landing Page boilerplate",
   icons: {
-    icon: "./favicon.ico",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "BuildFast",
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
 };
 
 export default function RootLayout({
@@ -40,28 +39,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
-    <html suppressHydrationWarning lang="en">
-      <Head>
-        <title>{String(metadata.title) || "Default Title"}</title>
-        <meta name="description" content={metadata.description || "Default description"} />
-        <link rel="icon" href="./favicon.ico" />
-      </Head>
-
+    <html lang="en" suppressHydrationWarning>
       <body className={Bricolage.className}>
         <ThemeProvider
-        defaultTheme="dark"
-        enableColorScheme
-        themes={['ruby', 'sapphire', 'daylight', 'emerald']}
+          defaultTheme="dark"
+          enableColorScheme
+          themes={["ruby", "sapphire", "daylight", "emerald"]}
         >
-          <Header/>
-          {/* <NavbarCenter/> */}
-            {children}
-          <Footer/>
-          </ThemeProvider>
+          <Header />
 
-        </body>
+          {/* <NavbarCenter /> */}
+
+          {children}
+
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
